@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <header class="hero" id="hero">
+            <div class="hero-inner">
+                <h1>Привет ^_^</h1>
+                <p class="hero-sub">Я люблю электронную музыку и людей, которые ее любят</p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn cta-btn">Узнать больше</a>
+                    <a href="#features" class="btn ghost">Мои навыки</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="about">
+            <div class="about-inner">
+                <div class="about-text">
+                    <h2>Немного обо мне</h2>
+                    <p>Я начинающий фронтенд-разработчик: изучаю HTML, CSS, JavaScript. Мне нравится учится на практике</p>
+                    <p>Сейчас работаю над портфолио и проектами для практики. Люблю чистый код и простые интерфейсы.</p>
+                </div>
+                <div class="about-media">
+                    <img src="https://avatars.mds.yandex.net/i?id=bd3a715301c3b36a860be1f3b08b0f0cb4f05148-5232014-images-thumbs&n=13" alt="Иллюстарция про работу">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title">Что я делаю</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Адаптивная верстка</h3>
+                    <p>Верстаю интерфейсы, которые хорошо выглядят на телефоне и десктопе</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Интерактивность</h3>
+                    <p>Добавляю логику на JavaScript: формы, события, простая валидация.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Чистый код</h3>
+                    <p>Стараюсь писать понятные и поддерживаемые стили и скрипты.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIVE PREVIEW: поле Имя -->
+        <div class="name-preview-block">
+            <label for="nameInput">Введите имя:</label>
+            <input id="nameInput" type="text" placeholder="Ваше имя">
+            <p>Превью: <span id="namePreview"></span></p>
+        </div>
+
+
+        <div class="profile-card">
+            <img class="avatar" src="https://avatars.mds.yandex.net/i?id=53f2b255dfe8d4c0d877857160f43316_sr-4902400-images-thumbs&n=13" alt="Фото профиля">
+
+            <h2>Илья Марков</h2>
+
+            <p class="description">
+                Начинающий фронтенд-разработчик. Люблю учиться новому,
+                делать аккуратный код и двигаться вперёд каждый день.
+            </p>
+
+            <button class="btn">Связаться</button>
+        </div>
+
+        <div class="sum-container">
+            <h2>Сумматор</h2>
+
+            <form id="sumForm">
+                <input id="num1" type="number" placeholder="Первое число">
+                <input id="num2" type="number" placeholder="Второе число">          
+                <button id="sumBtn" type="submit">Посчитать (Enter)</button>
+            </form>
+            
+
+            <p id="result">Результат: </p>
+        </div>
+
+        <div class="todo-container">
+            <h2>ToDo Lite</h2>
+            <input id="todoInput" type="text" placeholder="Введите задачу...">
+            <button id="addTodoBtn">Добавить</button>
+
+            <ul id="todoList"></ul>
+        </div>
+
+        
+        <div class="card-container">
+            <div class="card">
+                <img class="card-img" src="https://s2.ziareromania.ro/?mmid=d39d77bae890f9b4a" alt="img">
+                <h3>Памятник</h3>
+                <p>Мне нравится это фото, у него интересная атмосфера</p>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="https://avatars.mds.yandex.net/i?id=af531dfb0f2073231b72af6e1ba46e11_sr-10251735-images-thumbs&n=13" alt="img">
+                <h3>Продолговатый плюс</h3>
+                <p>Крест</p>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="https://recognizecity.com/wp-content/uploads/2025/06/ballerina_trailer_de_armas-BfHnrU-300x180.jpeg" alt="img">
+                <h3>Белая злость</h3>
+                <p>Перепутал время, зал пуст...</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>     

@@ -1,0 +1,353 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+p {
+    margin: 20px auto;
+}
+
+.profile-card {
+    max-width: 350px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius:  15px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #555;
+    line-height: 1.5;
+    margin: 15px 0 25px;
+}
+
+.btn {
+    background: #4e8cff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: #000000;
+}
+
+.sum-container {
+    max-width: 350px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.sum-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#sumBtn {
+    background: #4e8cff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+#sumBtn:hover {
+    background: #000000;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Убираем стрелочки в Chrome / Edge / Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Убираем стрелочки в Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #333
+}
+
+.card p{
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Hero / About / Features (для .container макета) ===== */
+.hero {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0,0,0,0));
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.hero-inner { max-width: 560px; margin: 0 auto; text-align: left }
+.hero h1 { font-size: 28px; margin: 0 0 8px; color: #222; text-align: left }
+.hero-sub { margin: 0 0 16px; color: #444; text-align: left; }
+
+/* ===== Кнопки (минимальная, понятная .btn) ===== */
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #4e8cff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: #333;
+  transition: 0.2s;
+}
+.btn.ghost:hover {
+    background: #fff;
+}
+
+
+/* About */
+.about { padding: 20px 0; margin-bottom: 20px; }
+.about-inner { display: flex; gap: 20px; align-items: center; }
+.about-text { flex: 1; }
+.about-media { flex: 1; }
+.about-media img { width: 100%; border-radius: 10px; display: block; }
+
+/* Features */
+.features { padding: 10px 0 30px; }
+.section-title { text-align: center; margin-bottom: 12px; color: #333; }
+.features-grid { display: flex; gap: 16px; justify-content: space-between; }
+.feature {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  flex: 1;
+  text-align: center;
+  transition: 0.2s;
+  flex-direction: column; 
+  gap: 12px;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Responsive: на узких экранах — колонки ===== */
+@media (max-width: 900px) {
+  .about-inner { flex-direction: column-reverse; }
+  .features-grid { flex-direction: column; }
+  .hero h1 { font-size: 22px; text-align: center; }
+  .hero-inner { text-align: center; }
+}
+
+
+/* ===== Блок ввода имени и превью ===== */
+.name-preview-block {
+  background: #fff;
+  padding: 14px 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  margin: 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 470px;
+}
+
+.name-preview-block label {
+  font-size: 14px;
+  color: #333;
+}
+
+.name-preview-block input[type="text"] {
+  padding: 8px 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: box-shadow .12s, border-color .12s;
+}
+
+.name-preview-block input[type="text"]:focus {
+  border-color: #4e8cff;
+  box-shadow: 0 3px 10px rgba(78,140,255,0.12);
+}
+
+/* Превью-строка */
+.name-preview-block p {
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+}
+
+/* ===== Стили для отключённой (disabled) кнопки ===== */
+button:disabled,
+.btn[disabled] {
+  background: #d9e6ff; /* светлый серо-голубой */
+  color: #8aa7db;
+  cursor: not-allowed;
+  opacity: 0.95;
+  transform: none;
+  box-shadow: none;
+}
+
+
+/* ===== ToDo Lite ===== */
+.todo-container {
+    max-width: 350px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+#todoInput {
+    width: 95%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#addTodoBtn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background: #4e8cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#addTodoBtn:hover {
+    background: #000000;
+}
+
+#todoList {
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+#todoList li {
+    background: #f5f5f5;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#todoList li:hover {
+    background: #e1e1e1;
+}
