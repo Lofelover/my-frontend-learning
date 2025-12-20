@@ -159,3 +159,21 @@ addTodoBtn.addEventListener('click', function () {
   todoList.appendChild(li);
   todoInput.value = "";
 });
+
+
+// ===== Приветствие по имени =====
+const nameInputBox = document.getElementById('nameInputBox');
+const nameBtn = document.getElementById('nameBtn');
+const nameResult = document.getElementById('nameResult');
+
+nameBtn.addEventListener('click', sayHello)
+
+function sayHello() {
+  const name = nameInputBox.value.trim();
+  if (name === ''){
+      nameResult.textContent = 'Пожалуйста, введите имя';
+  } else {
+    nameResult.textContent = `Привет, ${name}!`
+  }
+
+}
