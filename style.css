@@ -10,6 +10,12 @@ h1 {
     color: #333;
 }
 
+h2 {
+  text-align: center; 
+  margin-bottom: 12px; 
+  color: #333; 
+}
+
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -127,15 +133,15 @@ p {
 }
 
 #sumBtn {
-    background: #4e8cff;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 15px;
-    transition: 0.2s;
-    margin-top: 10px;
+  background: #4e8cff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+  margin-top: 10px;
 }
 
 @media (max-width: 900px) {
@@ -146,13 +152,13 @@ p {
 }
 
 #sumBtn:hover {
-    background: #000000;
+  background: #000000;
 }
 
 #result {
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: bold;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* Убираем стрелочки в Chrome / Edge / Opera */
@@ -461,3 +467,51 @@ button:disabled,
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Приветствие по имени ===== */
+
+
+.name-box {
+  max-width: 320px;
+  margin: 40px auto;
+  padding: 20px;
+
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+
+  text-align: center;
+}
+
+.name-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 12px 0;
+
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+#nameBtn {
+  background: #4e8cff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.25s;
+}
+
+#nameBtn:hover {
+  background: #000000;
+}
+
+#nameResult {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+
