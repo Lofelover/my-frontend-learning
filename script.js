@@ -175,5 +175,5 @@ function sayHello() {
   } else {
     nameResult.textContent = `Привет, ${name}!`
   }
-
+  nameInputBox.value = '';
 }
